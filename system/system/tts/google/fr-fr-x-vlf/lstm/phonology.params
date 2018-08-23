@@ -1,0 +1,226 @@
+# Mandatory identifiers of language and region.
+language: "fr"
+region: "FR"
+
+# Definitions of the phoneme set with distinctive features.
+# Vowels
+phoneme_def {name: "a"   vowel: true  rounded: false  length: SHORT  height: OPEN     position: FRONT}
+phoneme_def {name: "a~"  vowel: true  rounded: false  length: SHORT  height: OPEN     position: BACK}
+phoneme_def {name: "e"   vowel: true  rounded: false  length: SHORT  height: OPENMID  position: FRONT}
+phoneme_def {name: "e~"  vowel: true  rounded: false  length: SHORT  height: OPENMID  position: FRONT}
+phoneme_def {name: "E"   vowel: true  rounded: false  length: SHORT  height: CLOSEMID position: FRONT}
+phoneme_def {name: "i"   vowel: true  rounded: false  length: SHORT  height: CLOSE    position: FRONT}
+phoneme_def {name: "o"   vowel: true  rounded: true   length: SHORT  height: OPENMID  position: BACK}
+phoneme_def {name: "o~"  vowel: true  rounded: true   length: SHORT  height: OPENMID  position: BACK}
+phoneme_def {name: "O"   vowel: true  rounded: true   length: SHORT  height: OPENMID  position: BACK}
+phoneme_def {name: "u"   vowel: true  rounded: true   length: SHORT  height: CLOSE    position: BACK}
+phoneme_def {name: "y"   vowel: true  rounded: true   length: SHORT  height: CLOSE    position: FRONT}
+phoneme_def {name: "eu"  vowel: true  rounded: true   length: SHORT  height: CLOSEMID position: FRONT}
+phoneme_def {name: "ey"  vowel: true  rounded: true   length: SHORT  height: OPENMID  position: FRONT}
+phoneme_def {name: "@"   vowel: true  rounded: false  length: SHORT  height: OPENMID  position: CENTRAL}
+
+# Stops
+phoneme_def {name: "p"   vowel: false poa: LABIAL  manner: STOP  voiced: false}
+phoneme_def {name: "p?"  vowel: false poa: LABIAL  manner: STOP  voiced: false archi: true}
+phoneme_def {name: "t"   vowel: false poa: DENTAL  manner: STOP  voiced: false}
+phoneme_def {name: "t?"  vowel: false poa: DENTAL  manner: STOP  voiced: false archi: true}
+phoneme_def {name: "k"   vowel: false poa: VELAR   manner: STOP  voiced: false}
+phoneme_def {name: "b"   vowel: false poa: LABIAL  manner: STOP  voiced: true}
+phoneme_def {name: "d"   vowel: false poa: DENTAL  manner: STOP  voiced: true}
+phoneme_def {name: "g"   vowel: false poa: VELAR   manner: STOP  voiced: true}
+phoneme_def {name: "h"   vowel: false poa: VELAR   manner: STOP  voiced: false}
+# Fricatives
+phoneme_def {name: "f"   vowel: false poa: LABIAL    manner: FRICATIVE voiced: false}
+phoneme_def {name: "v"   vowel: false poa: LABIAL    manner: FRICATIVE voiced: true}
+phoneme_def {name: "S"   vowel: false poa: PALATAL   manner: FRICATIVE voiced: false}
+phoneme_def {name: "s"   vowel: false poa: ALVEOLAR  manner: FRICATIVE voiced: false}
+phoneme_def {name: "z"   vowel: false poa: ALVEOLAR  manner: FRICATIVE voiced: true}
+phoneme_def {name: "z?"  vowel: false poa: ALVEOLAR  manner: FRICATIVE voiced: true archi: true}
+phoneme_def {name: "Z"   vowel: false poa: PALATAL   manner: FRICATIVE voiced: true}
+# Approximants
+phoneme_def {name: "R"   vowel: false poa: VELAR     manner: APPROXIMANT voiced: true }
+phoneme_def {name: "R?"  vowel: false poa: VELAR     manner: APPROXIMANT voiced: true  archi: true}
+phoneme_def {name: "w"   vowel: false poa: LABIAL    manner: APPROXIMANT voiced: true }
+phoneme_def {name: "H"   vowel: false poa: PALATAL   manner: APPROXIMANT voiced: false }
+phoneme_def {name: "j"   vowel: false poa: PALATAL   manner: APPROXIMANT voiced: true }
+# Nasals
+phoneme_def {name: "m"   vowel: false poa: LABIAL    manner: NASAL voiced: true }
+phoneme_def {name: "n"   vowel: false poa: ALVEOLAR  manner: NASAL voiced: true }
+phoneme_def {name: "n?"   vowel: false poa: ALVEOLAR  manner: NASAL voiced: true  archi: true}
+
+# Lateral
+phoneme_def {name: "l"   vowel: false poa: ALVEOLAR  manner: LATERAL voiced: true }
+
+# Archiphoneme.
+archiphoneme_symbol: "?"
+
+# Definitions of which vowels take which stress values. Currently we
+# don't use stress explicitly in French, but as these definitions
+# create the set of legal vowels we must include them.
+stress_def {stress: 2 vowels: "a a~ e e~ E i o o~ O u y eu ey @"}
+
+single_primary_stress_required: false
+
+# Definitions of legal onsets. Each group defines a set of phonemes
+# which are permissible in that position.
+
+# Single phoneme onsets - any of these can start a syllable
+onset {group: "h k t p b d g S Z s z f v R l w H j m n" }
+
+#Two phoneme onsets
+onset {group: "s" group: "p b k t f v m n" }
+onset {group: "p" group: "n t s f S" }
+onset {group: "k" group: "t n m s" }
+onset {group: "R m h z Z l n" group:  "j w H" }
+onset {group: "d b g t v f S s k p" group: "R j w l H" }
+onset {group: "d" group: "z Z" }
+onset {group: "f" group: "t" }
+onset {group: "g" group: "n z" }
+onset {group: "j" group: "j w" }
+onset {group: "f m" group: "n" }  # add f for fnac...
+onset {group: "S" group: "n p t" }
+onset {group: "t" group: "s S" }
+onset {group: "m" group: "z" }
+
+# Three phoneme onsets
+onset {group: "b k" group: "l" group: "w" }
+onset {group: "f g p" group: "l" group: "H w" }
+onset {group: "b d f g k p t" group: "R" group: "H w" }
+onset {group: "s" group: "k p" group: "l R w" }
+onset {group: "s" group: "p t" group: "j" }
+onset {group: "s" group: "n" group: "H w" }
+onset {group: "s S" group: "t" group: "R" }
+onset {group: "d" group: "Z" group: "j" }
+onset {group: "p" group: "s t" group: "j" }
+onset {group: "t" group: "s S" group: "j" }
+onset {group: "n" group: "j" group: "w" }
+onset {group: "v" group: "R" group: "w" }
+onset {group: "k" group: "l" group: "H" }
+
+# Single phoneme codas
+coda {group:  "b d f g j k l m n p R s S t v w z Z n? p? R? t? z?" }
+
+# Two phoneme codas
+coda {group: "k f j p s w" group: "t" }
+coda {group: "b g k p f" group: "l R z z?" }
+coda {group: "l n R" group: "d g k s S t z" }
+coda {group: "v d t l" group: "R" }
+coda {group: "l R" group: "b f m n p v Z" }
+coda {group: "g k" group: "m n s" }
+coda {group: "m p" group: "n s" }
+coda {group: "j" group: "l n" }
+coda {group: "m S" group: "z" }
+coda {group: "t" group: "m s S z" }
+coda {group: "d" group: "n z Z" }
+coda {group: "j" group: "m v z" }
+coda {group: "s" group: "k m p n" }
+coda {group: "n" group: "j" }
+coda {group: "b" group: "s" }
+coda {group: "R" group: "l" }
+coda {group: "b g" group: "d" }
+coda {group: "p" group: "m" }
+coda {group: "l" group: "R" }
+coda {group: "b d f g j k l m n p R s S t v z Z" group: "t?" }
+coda {group: "b d f g j k l m n p R s S t v Z" group: "z?" }
+
+# Three phoneme codas
+coda {group: "p k l s" group: "t" group: "R z?" }
+coda {group: "k R" group: "s" group: "t" }
+coda {group: "S R" group: "t" group: "R" }
+coda {group: "R n" group: "d g k t" group: "z z?" }
+coda {group: "f j" group: "t" group: "z?" }
+coda {group: "l" group: "m p" group: "z?" }
+coda {group: "l" group: "k" group: "R z?" }
+coda {group: "R" group: "n" group: "j z" }
+coda {group: "R" group: "b d p" group: "R" }
+coda {group: "R" group: "f" group: "l z" }
+coda {group: "s" group: "k" group: "l n z?" }
+coda {group: "l" group: "f m t" group: "z z?" }
+coda {group: "n" group: "t" group: "S" }
+coda {group: "R" group: "k" group: "l" }
+coda {group: "R" group: "l" group: "z z?" }
+coda {group: "R" group: "t" group: "s" }
+coda {group: "t" group: "S" group: "z?" }
+coda {group: "R" group: "s" group: "k" }
+coda {group: "l" group: "d" group: "R" }
+coda {group: "l" group: "n" group: "j" }
+coda {group: "s" group: "d k p" group: "R" }
+coda {group: "k n R s" group: "g t" group: "z?" }
+coda {group: "R" group: "d f n" group: "z?" }
+coda {group: "f" group: "t" group: "z?" }
+coda {group: "n" group: "d" group: "z?" }
+
+# Four phoneme codas
+coda {group: "k" group: "s" group: "t" group: "R" }
+coda {group: "n" group: "t" group: "S" group: "z?" }
+coda {group: "R" group: "s" group: "t" group: "z?" }
+
+#Foreign onsets
+foreign_onset {group: "d" group: "z s" group: "v" }
+foreign_onset {group: "d k" group: "s S" }
+foreign_onset {group: "t" group: "f Z" }
+foreign_onset {group: "S" group: "m v k" }
+foreign_onset {group: "S" group: "p" group: "R" }
+foreign_onset {group: "z Z" group: "v" }
+
+#Foreign codas
+foreign_coda {group: "b S s m" group: "t"}
+foreign_coda {group: "b k m p" group: "S" }
+foreign_coda {group: "d f t v" group: "s" }
+foreign_coda {group: "k" group: "Z"}
+foreign_coda {group: "d l m n t v" group: "z" }
+foreign_coda {group: "m n s p" group: "f" }
+foreign_coda {group: "n" group: "f p t Z" }
+foreign_coda {group: "S" group: "k" }
+foreign_coda {group: "R" group: "b" group: "z"}
+foreign_coda {group: "l" group: "m t" group: "s"}
+foreign_coda {group: "R" group: "k m" group: "s"}
+foreign_coda {group: "R" group: "t" group: "S"}
+foreign_coda {group: "m" group: "p" }
+foreign_coda {group: "m" group: "p" group: "f" }
+foreign_coda {group: "m" group: "f" group: "z?" }
+
+legalizing_vowel: "ey"
+wordid_definition:  "[a-záàâäãåéèêëóòôöőøíìîïúùûüñçÿßş'&-]*_?[-a-z0-9]*?"
+# French initials, foreign initials
+# Then French characters, frequent foreign letters, rare ones.
+# Greek letters.
+spelling_definition: "(([a-zàâäéèêëîïôùûÿæœç]|[áåíóöøüñ])([a-zàâäèéêëîïöôùûüÿæœç\'&-]|[áíóñ]|[ãåìòőúßøşαεηουω])*)|[αβγδεζηθικλμνξοπρσςτυφχψω]"
+
+#------------------------------------
+# Phone mapping for diphone fallback:
+#------------------------------------
+phoneme_fallback_map { phoneme: "a" group: "a~ e e~" }
+phoneme_fallback_map { phoneme: "a~" group: "a o~ e~" }
+phoneme_fallback_map { phoneme: "e" group: "eu ey E" }
+phoneme_fallback_map { phoneme: "e~" group: "e ey E" }
+phoneme_fallback_map { phoneme: "E" group: "i e e~" }
+phoneme_fallback_map { phoneme: "i" group: "y e" }
+phoneme_fallback_map { phoneme: "o" group: "o~ O" }
+phoneme_fallback_map { phoneme: "o~" group: "o O a~" }
+phoneme_fallback_map { phoneme: "O" group: "o o~" }
+phoneme_fallback_map { phoneme: "u" group: "y O o" }
+phoneme_fallback_map { phoneme: "y" group: "u i eu" }
+phoneme_fallback_map { phoneme: "eu" group: "y ey E" }
+phoneme_fallback_map { phoneme: "ey" group: "y eu e" }
+phoneme_fallback_map { phoneme: "@" group: "ey eu" }
+phoneme_fallback_map { phoneme: "p" group: "t k b" }
+phoneme_fallback_map { phoneme: "t" group: "p k d" }
+phoneme_fallback_map { phoneme: "k" group: "p t g" }
+phoneme_fallback_map { phoneme: "b" group: "p d g" }
+phoneme_fallback_map { phoneme: "d" group: "t b g" }
+phoneme_fallback_map { phoneme: "g" group: "b d k" }
+phoneme_fallback_map { phoneme: "h" group: "@ ey eu" }
+phoneme_fallback_map { phoneme: "f" group: "v S s" }
+phoneme_fallback_map { phoneme: "v" group: "f Z z" }
+phoneme_fallback_map { phoneme: "S" group: "Z s" }
+phoneme_fallback_map { phoneme: "s" group: "S z" }
+phoneme_fallback_map { phoneme: "z" group: "Z s" }
+phoneme_fallback_map { phoneme: "Z" group: "S z" }
+phoneme_fallback_map { phoneme: "R" group: "k j g" }
+phoneme_fallback_map { phoneme: "w" group: "v H m b" }
+phoneme_fallback_map { phoneme: "H" group: "w j" }
+phoneme_fallback_map { phoneme: "j" group: "Z H S" }
+phoneme_fallback_map { phoneme: "m" group: "n w" }
+phoneme_fallback_map { phoneme: "n" group: "m l" }
+phoneme_fallback_map { phoneme: "l" group: "w n" }
