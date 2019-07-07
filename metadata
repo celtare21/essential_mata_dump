@@ -1,0 +1,10 @@
+ota-property-files=payload_metadata.bin:7710:148125,payload.bin:7710:1151402865,payload_properties.txt:1151410633:156,care_map.txt:726:218,compatibility.zip:997:6666,metadata:69:609                   
+ota-required-cache=0
+ota-streaming-property-files=payload.bin:7710:1151402865,payload_properties.txt:1151410633:156,care_map.txt:726:218,compatibility.zip:997:6666,metadata:69:609                     
+ota-type=AB
+post-build=essential/mata/mata:9/PQ1A.190105.090/528:user/release-keys
+post-build-incremental=528
+post-sdk-level=28
+post-security-patch-level=2019-07-05
+post-timestamp=1560472247
+pre-device=mata

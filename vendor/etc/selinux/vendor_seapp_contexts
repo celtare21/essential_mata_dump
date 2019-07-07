@@ -1,0 +1,4 @@
+user=system seinfo=platform name=com.qualcomm.telephony domain=qtelephony type=system_app_data_file
+user=_app seinfo=tango name=com.google.tango:app domain=untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=platform name=com.essential.klik domain=essential_camera_app type=app_data_file
+user=_app seinfo=platform name=com.qualcomm.timeservice domain=timeservice_app type=app_data_file
