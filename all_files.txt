@@ -542,7 +542,7 @@ modem/image/wil6210.brd
 modem/image/wil6210.fw
 modem/image/wlanmdsp.mbn
 modem/verinfo/ver_info.txt
-PH1-OTA-QP1A.190711.107.zip
+PH1-Images-QP1A.190711.122.zip
 system/bugreports
 system/cache
 system/charger
@@ -4370,7 +4370,6 @@ vendor/etc/permissions/android.hardware.camera.full.xml
 vendor/etc/permissions/android.hardware.camera.raw.xml
 vendor/etc/permissions/android.hardware.fingerprint.xml
 vendor/etc/permissions/android.hardware.location.gps.xml
-vendor/etc/permissions/android.hardware.nfc.hcef.xml
 vendor/etc/permissions/android.hardware.nfc.hce.xml
 vendor/etc/permissions/android.hardware.nfc.uicc.xml
 vendor/etc/permissions/android.hardware.nfc.xml
