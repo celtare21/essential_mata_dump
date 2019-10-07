@@ -45,6 +45,12 @@ gsm.roaming.                 u:object_r:omadm_prop:s0
 cdma.roaming.                u:object_r:omadm_prop:s0
 
 vendor.wfdservice            u:object_r:wfd_service_prop:s0
+
+vendor.powerhal.state        u:object_r:power_prop:s0
+vendor.powerhal.audio        u:object_r:power_prop:s0
+vendor.powerhal.lpm          u:object_r:power_prop:s0
+vendor.powerhal.init         u:object_r:power_prop:s0
+vendor.powerhal.rendering    u:object_r:power_prop:s0
 #line 1 "system/sepolicy/reqd_mask/property_contexts"
 # empty property_contexts file - this file is used to generate an empty
 # non-platform property context for devices without any property_contexts

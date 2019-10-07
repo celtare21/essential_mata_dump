@@ -542,7 +542,7 @@ modem/image/wil6210.brd
 modem/image/wil6210.fw
 modem/image/wlanmdsp.mbn
 modem/verinfo/ver_info.txt
-PH1-Images-QP1A.190711.122.zip
+PH1-Images-QP1A.190711.148.zip
 system/bugreports
 system/cache
 system/charger
@@ -4054,7 +4054,7 @@ vendor/bin/hw/android.hardware.light@2.0-service
 vendor/bin/hw/android.hardware.media.omx@1.0-service
 vendor/bin/hw/android.hardware.memtrack@1.0-service
 vendor/bin/hw/android.hardware.nfc@1.1-service
-vendor/bin/hw/android.hardware.power@1.1-service.mata
+vendor/bin/hw/android.hardware.power@1.3-service.mata-libperfmgr
 vendor/bin/hw/android.hardware.sensors@1.0-service
 vendor/bin/hw/android.hardware.thermal@1.0-service.mata
 vendor/bin/hw/android.hardware.usb@1.0-service.mata
@@ -4132,7 +4132,6 @@ vendor/bin/od
 vendor/bin/paste
 vendor/bin/patch
 vendor/bin/pd-mapper
-vendor/bin/perfd
 vendor/bin/pgrep
 vendor/bin/pidof
 vendor/bin/pkill
@@ -4322,7 +4321,7 @@ vendor/etc/init/android.hardware.light@2.0-service.rc
 vendor/etc/init/android.hardware.media.omx@1.0-service.rc
 vendor/etc/init/android.hardware.memtrack@1.0-service.rc
 vendor/etc/init/android.hardware.nfc@1.1-service.rc
-vendor/etc/init/android.hardware.power@1.1-service.mata.rc
+vendor/etc/init/android.hardware.power@1.3-service.mata-libperfmgr.rc
 vendor/etc/init/android.hardware.sensors@1.0-service.rc
 vendor/etc/init/android.hardware.thermal@1.0-service.mata.rc
 vendor/etc/init/android.hardware.usb@1.0-service.mata.rc
@@ -4409,6 +4408,7 @@ vendor/etc/permissions/qti-vzw-ims-internal.xml
 vendor/etc/permissions/radioconfiginterface.xml
 vendor/etc/permissions/radioconfig.xml
 vendor/etc/permissions/telephonyservice.xml
+vendor/etc/powerhint.json
 vendor/etc/powerhint.xml
 vendor/etc/public.libraries.txt
 vendor/etc/qvop/antispoofing.bin
@@ -4450,6 +4450,7 @@ vendor/etc/thermal-engine.conf
 vendor/etc/usb_audio_policy_configuration.xml
 vendor/etc/vintf/compatibility_matrix.xml
 vendor/etc/vintf/manifest/android.hardware.cas@1.1-service.xml
+vendor/etc/vintf/manifest/android.hardware.power@1.3-service.mata.xml
 vendor/etc/vintf/manifest.xml
 vendor/etc/wifi/p2p_supplicant_overlay.conf
 vendor/etc/wifi/WCNSS_qcom_cfg.ini
@@ -4718,6 +4719,7 @@ vendor/lib64/libOpenCL.so
 vendor/lib64/liboptizoom.so
 vendor/lib64/libpdmapper.so
 vendor/lib64/libpdnotifier.so
+vendor/lib64/libperfmgr.so
 vendor/lib64/libperipheral_client.so
 vendor/lib64/libpvr.so
 vendor/lib64/libq3dtools_adreno.so
@@ -4741,7 +4743,6 @@ vendor/lib64/libqseed3.so
 vendor/lib64/libqservice.so
 vendor/lib64/libqtigef.so
 vendor/lib64/libqti-perfd-client.so
-vendor/lib64/libqti-util.so
 vendor/lib64/libreference-ril.so
 vendor/lib64/lib_remote_simlock.so
 vendor/lib64/libril-qc-ltedirectdisc.so
