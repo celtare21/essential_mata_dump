@@ -3365,7 +3365,7 @@
 (allow vendor_init_29_0 nfc_data_file_29_0 (dir (ioctl read setattr open)))
 (allow vendor_init_29_0 preloads_data_file_29_0 (dir (ioctl open)))
 (allow vendor_init_29_0 preloads_media_file_29_0 (dir (setattr)))
-(allow vendor_init_29_0 unlabeled_29_0 (dir (read getattr relabelfrom search)))
+(allow vendor_init_29_0 unlabeled_29_0 (dir (read getattr setattr relabelfrom search)))
 (allow vendor_init_29_0 unlabeled_29_0 (file (read getattr setattr relabelfrom)))
 (allow vold_29_0 tee_listener_prop (file (read getattr map open)))
 (allow vold_29_0 sysfs_scsi_devices_0000 (file (write)))

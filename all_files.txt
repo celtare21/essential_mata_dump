@@ -542,7 +542,7 @@ modem/image/wil6210.brd
 modem/image/wil6210.fw
 modem/image/wlanmdsp.mbn
 modem/verinfo/ver_info.txt
-PH1-Images-QP1A.190711.148.zip
+PH1-Images-QP1A.191005.014.zip
 system/bugreports
 system/cache
 system/charger
