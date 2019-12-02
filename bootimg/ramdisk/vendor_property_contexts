@@ -43,6 +43,12 @@ sys.omadm.                   u:object_r:omadm_prop:s0
 ro.com.android.dataroaming   u:object_r:omadm_prop:s0
 gsm.roaming.                 u:object_r:omadm_prop:s0
 cdma.roaming.                u:object_r:omadm_prop:s0
+ro.home.operator.carrierid   u:object_r:omadm_prop:s0
+ro.cdma.home.operator.numeric  u:object_r:omadm_prop:s0
+ro.cdma.home.operator.alpha  u:object_r:omadm_prop:s0
+ro.cnap.configstatus         u:object_r:omadm_prop:s0
+ro.com.google.clientidbase.  u:object_r:omadm_prop:s0
+
 
 vendor.wfdservice            u:object_r:wfd_service_prop:s0
 

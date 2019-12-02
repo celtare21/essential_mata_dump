@@ -170,8 +170,8 @@ bootimg/ramdisk/system/lib64/libcap.so
 bootimg/ramdisk/system/lib64/libcgrouprc.so
 bootimg/ramdisk/system/lib64/libcrypto.so
 bootimg/ramdisk/system/lib64/libcrypto_utils.so
-bootimg/ramdisk/system/lib64/libc.so
 bootimg/ramdisk/system/lib64/libc++.so
+bootimg/ramdisk/system/lib64/libc.so
 bootimg/ramdisk/system/lib64/libcutils.so
 bootimg/ramdisk/system/lib64/libdl.so
 bootimg/ramdisk/system/lib64/libext2_blkid.so
@@ -542,7 +542,7 @@ modem/image/wil6210.brd
 modem/image/wil6210.fw
 modem/image/wlanmdsp.mbn
 modem/verinfo/ver_info.txt
-PH1-Images-QP1A.191005.014.zip
+PH1-Images-QQ1A.191205.017.zip
 system/bugreports
 system/cache
 system/charger
@@ -1524,10 +1524,12 @@ system/system/fonts/NotoSansMiao-Regular.otf
 system/system/fonts/NotoSansMongolian-Regular.ttf
 system/system/fonts/NotoSansMro-Regular.otf
 system/system/fonts/NotoSansMultani-Regular.otf
-system/system/fonts/NotoSansMyanmar-Bold-ZawDecode.ttf
-system/system/fonts/NotoSansMyanmar-Regular-ZawDecode.ttf
-system/system/fonts/NotoSansMyanmarUI-Bold-ZawDecode.ttf
-system/system/fonts/NotoSansMyanmarUI-Regular-ZawDecode.ttf
+system/system/fonts/NotoSansMyanmar-Bold.otf
+system/system/fonts/NotoSansMyanmar-Medium.otf
+system/system/fonts/NotoSansMyanmar-Regular.otf
+system/system/fonts/NotoSansMyanmarUI-Bold.otf
+system/system/fonts/NotoSansMyanmarUI-Medium.otf
+system/system/fonts/NotoSansMyanmarUI-Regular.otf
 system/system/fonts/NotoSansNabataean-Regular.otf
 system/system/fonts/NotoSansNewa-Regular.otf
 system/system/fonts/NotoSansNewTaiLue-Regular.ttf
@@ -1970,9 +1972,6 @@ system/system/framework/WfdCommon.jar
 system/system/framework/wifi-service.jar
 system/system/framework/wifi-service.jar.prof
 system/system/lib64/android.frameworks.bufferhub@1.0.so
-system/system/lib64/android.frameworks.cameraservice.common@2.0.so
-system/system/lib64/android.frameworks.cameraservice.device@2.0.so
-system/system/lib64/android.frameworks.cameraservice.service@2.0.so
 system/system/lib64/android.frameworks.displayservice@1.0.so
 system/system/lib64/android.frameworks.schedulerservice@1.0.so
 system/system/lib64/android.frameworks.sensorservice@1.0.so
@@ -1998,14 +1997,6 @@ system/system/lib64/android.hardware.bluetooth.audio@2.0.so
 system/system/lib64/android.hardware.boot@1.0.so
 system/system/lib64/android.hardware.broadcastradio@1.0.so
 system/system/lib64/android.hardware.broadcastradio@1.1.so
-system/system/lib64/android.hardware.camera.common@1.0.so
-system/system/lib64/android.hardware.camera.device@1.0.so
-system/system/lib64/android.hardware.camera.device@3.2.so
-system/system/lib64/android.hardware.camera.device@3.3.so
-system/system/lib64/android.hardware.camera.device@3.4.so
-system/system/lib64/android.hardware.camera.device@3.5.so
-system/system/lib64/android.hardware.camera.provider@2.4.so
-system/system/lib64/android.hardware.camera.provider@2.5.so
 system/system/lib64/android.hardware.cas@1.0.so
 system/system/lib64/android.hardware.cas.native@1.0.so
 system/system/lib64/android.hardware.configstore@1.0.so
@@ -2166,13 +2157,11 @@ system/system/lib64/libbz.so
 system/system/lib64/libcamera2ndk.so
 system/system/lib64/libcamera_client.so
 system/system/lib64/libcamera_metadata.so
-system/system/lib64/libcameraservice.so
 system/system/lib64/libcap.so
 system/system/lib64/libcgrouprc.so
 system/system/lib64/libchromaflash.so
 system/system/lib64/libchrome.so
 system/system/lib64/libclang_rt.asan-aarch64-android.so
-system/system/lib64/libclang_rt.hwasan-aarch64-android.so
 system/system/lib64/libclcore.bc
 system/system/lib64/libclcore_debug.bc
 system/system/lib64/libclcore_debug_g.bc
@@ -2188,8 +2177,8 @@ system/system/lib64/libcompiler_rt.so
 system/system/lib64/libcrypto.so
 system/system/lib64/libcrypto_utils.so
 system/system/lib64/libc_scudo.so
-system/system/lib64/libc.so
 system/system/lib64/libc++.so
+system/system/lib64/libc.so
 system/system/lib64/libcups.so
 system/system/lib64/libcurl.so
 system/system/lib64/libcutils.so
@@ -2437,7 +2426,7 @@ system/system/lib64/libsqlite.so
 system/system/lib64/libsquashfs_utils.so
 system/system/lib64/libssl.so
 system/system/lib64/libstagefright_amrnb_common.so
-system/system/lib64/libstagefright_bufferpool@2.0.so
+system/system/lib64/libstagefright_bufferpool@2.0.1.so
 system/system/lib64/libstagefright_bufferqueue_helper.so
 system/system/lib64/libstagefright_codecbase.so
 system/system/lib64/libstagefright_enc_common.so
@@ -2494,7 +2483,6 @@ system/system/lib64/libwifi-service.so
 system/system/lib64/libwifi-system-iface.so
 system/system/lib64/libwilhelm.so
 system/system/lib64/libxml2.so
-system/system/lib64/libyuv.so
 system/system/lib64/libziparchive.so
 system/system/lib64/libz.so
 system/system/lib64/netd_aidl_interface-V2-cpp.so
@@ -2918,8 +2906,8 @@ system/system/lib/libcodec2.so
 system/system/lib/libcodec2_vndk.so
 system/system/lib/libcompiler_rt.so
 system/system/lib/libcrypto.so
-system/system/lib/libc.so
 system/system/lib/libc++.so
+system/system/lib/libc.so
 system/system/lib/libcurl.so
 system/system/lib/libcutils.so
 system/system/lib/libdebuggerd_client.so
@@ -3116,7 +3104,7 @@ system/system/lib/libspeexresampler.so
 system/system/lib/libsqlite.so
 system/system/lib/libssl.so
 system/system/lib/libstagefright_amrnb_common.so
-system/system/lib/libstagefright_bufferpool@2.0.so
+system/system/lib/libstagefright_bufferpool@2.0.1.so
 system/system/lib/libstagefright_bufferqueue_helper.so
 system/system/lib/libstagefright_codecbase.so
 system/system/lib/libstagefright_enc_common.so
@@ -3480,7 +3468,6 @@ system/system/media/audio/notifications/Biscay.ogg
 system/system/media/audio/notifications/Crater.ogg
 system/system/media/audio/notifications/Croatan.ogg
 system/system/media/audio/notifications/Donzy.ogg
-system/system/media/audio/notifications/Gallatin.ogg
 system/system/media/audio/notifications/Gila.ogg
 system/system/media/audio/notifications/Havasu.ogg
 system/system/media/audio/notifications/Highlands.ogg
@@ -3488,6 +3475,7 @@ system/system/media/audio/notifications/Hudson.ogg
 system/system/media/audio/notifications/Kootenai.ogg
 system/system/media/audio/notifications/Krajna.ogg
 system/system/media/audio/notifications/Manu.ogg
+system/system/media/audio/notifications/Nishijin.ogg
 system/system/media/audio/notifications/Paloemeu.ogg
 system/system/media/audio/notifications/Piska.ogg
 system/system/media/audio/notifications/Sagano.ogg
@@ -3698,7 +3686,6 @@ system/system/product/overlay/IconPackRoundedSettings/IconPackRoundedSettingsOve
 system/system/product/overlay/IconPackRoundedSystemUI/IconPackRoundedSystemUIOverlay.apk
 system/system/product/overlay/IconShapeCircle/IconShapeCircleOverlay.apk
 system/system/product/overlay/IconShapeRoundedRect/IconShapeRoundedRectOverlay.apk
-system/system/product/overlay/IconShapeSquare/IconShapeSquareOverlay.apk
 system/system/product/overlay/IconShapeSquircle/IconShapeSquircleOverlay.apk
 system/system/product/overlay/IconShapeTeardrop/IconShapeTeardropOverlay.apk
 system/system/product/overlay/NavigationBarMode2Button/NavigationBarMode2ButtonOverlay.apk
@@ -3883,6 +3870,7 @@ system/system/usr/keylayout/uinput-fpc.kl
 system/system/usr/keylayout/Vendor_0079_Product_0011.kl
 system/system/usr/keylayout/Vendor_045e_Product_028e.kl
 system/system/usr/keylayout/Vendor_045e_Product_02d1.kl
+system/system/usr/keylayout/Vendor_045e_Product_02dd.kl
 system/system/usr/keylayout/Vendor_045e_Product_02e0.kl
 system/system/usr/keylayout/Vendor_045e_Product_02e3.kl
 system/system/usr/keylayout/Vendor_045e_Product_02ea.kl
@@ -4812,6 +4800,7 @@ vendor/lib64/libvpphvx.so
 vendor/lib64/libvpplibrary.so
 vendor/lib64/libwebrtc_audio_preprocessing.so
 vendor/lib64/libwfdhdcpcp.so
+vendor/lib64/libwifi-hal-ctrl.so
 vendor/lib64/libwifi-hal-qcom.so
 vendor/lib64/libwifi-hal.so
 vendor/lib64/libwms.so
@@ -5400,6 +5389,7 @@ vendor/lib/libwfdhaldsmanager.so
 vendor/lib/libwfdhdcpcp.so
 vendor/lib/libwfdmmservice.so
 vendor/lib/libwfdmodulehdcpsession.so
+vendor/lib/libwifi-hal-ctrl.so
 vendor/lib/libwifi-hal-qcom.so
 vendor/lib/libwms.so
 vendor/lib/libwpa_client.so

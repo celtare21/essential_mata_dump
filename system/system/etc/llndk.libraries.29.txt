@@ -8,7 +8,6 @@ libc.so
 libcgrouprc.so
 libclang_rt.asan-aarch64-android.so
 libclang_rt.asan-arm-android.so
-libclang_rt.hwasan-aarch64-android.so
 libdl.so
 libft2.so
 liblog.so
